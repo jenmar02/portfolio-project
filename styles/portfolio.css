@@ -1,9 +1,73 @@
-h1 {
-  color: black;
-  font-family: "Playfair Display", serif;
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #948ff7;
+  --tertiary-color: #f9f7fe;
+  --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --playfair-font: "Playfair Display", serif;
+  --poppins-font: "Poppins", sans-serif;
+  --prime-transition: all 100ms ease-in-out;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #272142;
+  font-family: var(--playfair-font);
   font-weight: bold;
 }
 p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-family: var(--poppins-font);
+  font-weight: 400;
+}
+.hero {
+  background: var(--tertiary-color);
+  text-align: center;
+  padding: 160px 20px;
+}
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+.hero h1 {
+  font-size: 80px;
+  font-weight: bold;
+}
+.hero h2 {
+  font-size: 24px;
+  font-family: var(--poppins-font);
+  font-weight: normal;
+  line-height: 2;
+}
+.hero .hero-btn {
+  font-size: 18px;
+  color: white;
+  padding: 18px 30px;
+  background: var(--primary-color);
+  font-family: var(--poppins-font);
+  border-radius: 4px;
+  line-height: 27px;
+  box-shadow: var(--box-shadow);
+}
+.hero:hover .hero-btn:hover {
+  background: var(--secondary-color);
+  color: white;
+  transition: var(--prime-transition);
+}
+@media (max-width: 800px) {
+  .hero p {
+    font-size: 24px;
+  }
+  .hero h1 {
+    font-size: 48px;
+  }
+  .hero h2 {
+    font-size: 14px;
+  }
+  .hero .hero-btn {
+    font-size: 12px;
+    padding: 12px 24px;
+  }
 }
