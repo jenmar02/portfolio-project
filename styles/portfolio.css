@@ -20,7 +20,6 @@ h6 {
 }
 p {
   font-family: var(--poppins-font);
-  font-weight: normal;
   font-size: 16px;
 }
 h2 {
@@ -50,7 +49,8 @@ nav li {
   margin-left: 20px;
 }
 nav a:hover,
-nav .active {
+nav .active,
+footer .email-link:hover {
   color: var(--primary-color);
 }
 .contact-link {
@@ -103,18 +103,19 @@ nav .active {
   color: black;
 }
 .hero .hero-btn,
-.about-btn {
+.about-btn,
+.contact-btn {
   font-size: 18px;
-  font-weight: normal;
   color: white;
   padding: 18px 30px;
   background: var(--primary-color);
   font-family: var(--poppins-font);
-  border-radius: 4px;
+  border-radius: 5px;
   line-height: 27px;
   box-shadow: var(--box-shadow);
   transition: var(--prime-transition);
   text-decoration: none;
+  margin: 30px auto;
 }
 .hero .hero-btn:hover {
   background: var(--secondary-color);
@@ -148,13 +149,51 @@ nav .active {
   font-size: 24;
   text-align: center;
 }
-.content-container h4 {
+.content-container h5 {
   font-weight: normal;
   font-size: 14px;
   font-family: var(--poppins-font);
   text-align: center;
   opacity: 0.6;
   margin-top: 5px;
+}
+.dictionary-container {
+  margin-bottom: 81px;
+}
+footer .contact-box {
+  background: var(--tertiary-color);
+  align-items: center;
+  padding: 30px;
+  border-radius: 20px;
+}
+footer h4 {
+  font-weight: bold;
+  font-size: 38px;
+}
+footer p {
+  font-size: 18px;
+  margin: 0;
+}
+footer .email-link {
+  text-decoration: none;
+  color: var(--noir-color);
+  font-size: 24px;
+  font-family: var(--poppins-font);
+  text-align: center;
+  transition: var(--prime-transition);
+}
+footer .social-links a {
+  color: var(--primary-color);
+  margin: 0 20px;
+  background: var(--tertiary-color);
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 50px;
+  transition: var(--prime-transition);
+}
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--primary-color);
 }
 @media (max-width: 850px) {
   nav a {
@@ -181,7 +220,8 @@ nav .active {
   }
 
   .hero .hero-btn,
-  .about-btn {
+  .about-btn,
+  .contact-btn {
     font-size: 12px;
     padding: 12px 24px;
     color: white;
@@ -206,5 +246,18 @@ nav .active {
     display: block;
     margin: 0 auto;
     max-width: 360px;
+  }
+  footer .contact-box {
+    padding: 30px;
+  }
+  footer h4 {
+    font-size: 25px;
+  }
+  footer p {
+    font-size: 13px;
+  }
+  footer .email-link,
+  .social-links {
+    font-size: 18px;
   }
 }
