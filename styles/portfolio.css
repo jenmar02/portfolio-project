@@ -27,6 +27,39 @@ h2 {
   font-size: 64px;
   font-weight: bold;
 }
+nav a {
+  text-decoration: none;
+  color: var(--noir-color);
+  opacity: 70%;
+  font-family: var(--poppins-font);
+  font-weight: normal;
+  font-size: 16px;
+  transition: var(--prime-transition);
+}
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 20px;
+}
+nav a:hover,
+nav .active {
+  color: var(--primary-color);
+}
+.contact-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.logo {
+  max-height: 40px;
+}
 .project-name {
   opacity: 70%;
   line-height: 30px;
@@ -83,7 +116,7 @@ h2 {
   transition: var(--prime-transition);
   text-decoration: none;
 }
-.hero:hover .hero-btn:hover {
+.hero .hero-btn:hover {
   background: var(--secondary-color);
   color: white;
 }
@@ -98,10 +131,6 @@ h2 {
   font-family: var(--poppins-font);
   font-size: 18px;
   font-weight: bold;
-}
-.content-container a {
-  text-decoration: none;
-  color: var(--primary-color);
 }
 .content-container p {
   line-height: 30px;
@@ -127,7 +156,13 @@ h2 {
   opacity: 0.6;
   margin-top: 5px;
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
+  nav a {
+    font-size: 13px;
+  }
+  .inner-content {
+    margin-top: 10px;
+  }
   .hero p {
     font-size: 24px;
   }
@@ -149,6 +184,7 @@ h2 {
   .about-btn {
     font-size: 12px;
     padding: 12px 24px;
+    color: white;
   }
   .project-descption {
     padding: 0;
