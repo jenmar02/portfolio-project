@@ -99,6 +99,10 @@ h2 {
   font-size: 18px;
   font-weight: bold;
 }
+.content-container a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
 .content-container p {
   line-height: 30px;
 }
